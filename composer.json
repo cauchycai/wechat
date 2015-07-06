@@ -11,8 +11,15 @@
             "email": "cauchy.cai@gmail.com"
         }
     ],
+    "repositories": [
+        {
+            "type": "git",
+            "url": "https://github.com/cauchycai/wechat-crypto"
+        }
+    ],
     "require": {
-        "php": ">=5.4.0"
+        "php": ">=5.4.0",
+        "cauchycai/wechat-crypto": "dev-master"
     },
     "require-dev": {
         "phpunit/phpunit": "~4.0"
