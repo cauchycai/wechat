@@ -8,8 +8,7 @@
     "authors": [
         {
             "name": "Cauchy Cai",
-            "email": "cauchy.cai@gmail.com",
-            "homepage": ""
+            "email": "cauchy.cai@gmail.com"
         }
     ],
     "require": {
