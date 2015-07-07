@@ -9,7 +9,7 @@
  * @copyright Copyright (c) 2015 Cauchy Cai
  */
 
-namespace Wechat;
+namespace \Wechat;
 
 class Wechat
 {
@@ -41,5 +41,10 @@ class Wechat
         $tmpStr = implode($tmpArr);
         $tmpStr = sha1($tmpStr);
         return $tmpStr === $signature;
+    }
+
+    public static function reply()
+    {
+
     }
 }

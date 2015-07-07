@@ -36,4 +36,11 @@ class WechatTest extends \PHPUnit_Framework_TestCase
             ),
         );
     }
+
+    public function testReplyWorks($query, $token)
+    {
+        $isValidSignature = Wechat::checkSignature($query);
+        $this->assertTrue($isValidSignature);
+        Wechat::getMessage();
+    }
 }
