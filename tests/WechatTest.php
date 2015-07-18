@@ -1,13 +1,21 @@
 <?php
 
-namespace Wechat\Test;
+namespace \Wechat\Test;
 
 use \Wechat\Wechat;
+use \WechatCrypto\Crypto;
 
 class WechatTest extends \PHPUnit_Framework_TestCase
 {
+    private $token;
+    private $encodingAesKey;
+    private $appId;
+
     public function setUp()
     {
+        $this->token = 'pamtest';
+        $this->encodingAesKey = 'abcdefghijklmnopqrstuvwxyz0123456789ABCDEFG';
+        $this->appId = 'wxb11529c136998cb6';
     }
 
     /**
@@ -27,5 +35,12 @@ class WechatTest extends \PHPUnit_Framework_TestCase
                 'token' => 'token'
             ),
         );
+    }
+
+    public function testReplyWorks($query, $token)
+    {
+        $isValidSignature = Wechat::checkSignature($query);
+        $this->assertTrue($isValidSignature);
+        Wechat::getMessage();
     }
 }
