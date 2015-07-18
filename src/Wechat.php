@@ -4,7 +4,7 @@
  *
  * Wechat Message Callback Processing
  *
- * @author    Cauchy Cai <cauchy.cai@gmail.com>
+ * @author     Cauchy Cai <cauchy.cai@gmail.com>
  * @createDate 2015-07-03 11:46
  * @copyright Copyright (c) 2015 Cauchy Cai
  */
